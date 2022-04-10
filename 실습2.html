@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title> 실습2 </title>
+	</head>
+	<body>	
+		<p align ="center">
+			<input type="button" onclick="javascript()" value="클릭시 실행"/>
+		</p>
+	</body>
+</html>
+<script>
+	function javascript(){
+		var string1 = prompt("첫 수", "첫 번째 숫자를 정해줄 수 있다.");
+		var string2 = prompt("두 번째", "두 번째 숫자를 정해줄 수 있다.");
+		var string3 = prompt("세 번째", "세 번째 숫자를 정해줄 수 있다.");
+		alert("당신이 입력한 숫자 세 개는 "+string1+"\n"+ string2+"\n"+string3+"입니다.");
+			
+		if (string1 >= string2 && string1 >= string2) {
+			document.write( "당신이 입력한 숫자 세 개는 "+string1+"\n"+ string2+"\n"+string3+"입니다."+"가장큰수:"+string1);
+		}
+		else if (string2 >= string1 && string2 >= string3) {
+			document.write("당신이 입력한 숫자 세 개는 "+string1+"\n"+ string2+"\n"+string3+"입니다."+"가장큰수:"+string2);
+		}
+		else if (string3 >= string2 && string3 >= string1) {
+				document.write("당신이 입력한 숫자 세 개는 "+string1+"\n"+ string2+"\n"+string3+"입니다."+"가장큰수:"+string3);
+		}
+	}
+</script>
